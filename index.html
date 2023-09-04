@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer type='module'></script>
+  <title>weather</title>
+</head>
+<body>
+	<div id='card'>
+	  <section id='display'>
+	    <div>
+	   <h1 id='name_city'>Montevideo</h1>
+	    <img id='img' />
+	   </div>
+	   <div>
+	     <div>
+	   <h4 id='lat'><sub>Latitud</sub></h4>
+	   </div>
+	   <h2 id='temperature'>5° C</h2>
+	   <div>
+	   <h4 id='lon'><sub>Longitud</sub></h4>
+	   </div>
+	   </div>
+	   <h5 id='humidity'>Humidity: 3%</h5> 
+	   <h5 id='wind'>Wind: 25km</h5>
+	   <img id='Arrow' src='/assets/Arrow.svg'/>
+	  </section>
+	  <section id='footer'>
+	    <p>Choose your city</p>
+	    <form>
+	    <select name='select_city' id='select_city' />
+	    <option value='Miami' selected="selected">Miami</option>
+	    <option value='Newyork' >New york</option>
+	    <option value='Chicago' >Chicago</option>
+	    <option value='Madrid' >Madrid</option>
+	    <option value='Barcelona' >Barcelona</option>
+	    <option value='Valencia' >Valencia</option>
+	    <option value='Paris' >Paris</option>
+	    <option value='Roma' >Roma</option>
+	    <option value='Buenosaires' >Buenos aires</option>
+	    <option value='cordoba' >Cordoba</option>
+	    <option value='Montevideo' >Montevideo</option>
+	    <option value='Medellin' >Medellin</option>
+	    <option value='Bogota' >Bogota</option>
+	    <input type='text' name='enter_city' id='enter_city' placeholder='Enter City' />
+	    <div id='btn'>Enviar</div>
+	    </form>
+	      <div>
+	      <p id='btn_celcius'>°C</p>
+	      <p id='btn_farenheit'>°F</p>
+	    </div>
+	    <div>
+	      <p id='btn_kilometro'>km</p>
+	      <p id='btn_milla'>mph</p>
+	    </div>
+	  </section>
+	</div>
+</body>
+</html>

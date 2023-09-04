@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-size: 20px;
+  overflow-x: hidden;
+  color: white;
+  background-image: url('/assets/clouds.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+img {max-width: 100%;}
+
+#card {
+  margin: 50% auto;
+  padding: 10px;
+  width: 40%;
+  max-width: 1000px;
+  height: auto;
+  position: relative;
+  background-color: #007EE5;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+}
+
+
+#card #display {
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+
+
+#card #display  #img {
+  width: 35px;
+}
+
+#card #display div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#card #display div img {
+  width: 40px;
+}
+
+#card #display div h1 {
+  padding: 5px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#card #display h2 {
+  padding: 5px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#card #display h5 {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#card #display #Arrow {
+  margin: 0 20px;
+  width: 30px;
+}
+
+#card #display div {
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#card #display div div {
+  margin: 0 10px;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#card #display h5 {
+  margin-bottom: 5px 0;
+  width: auto;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#card #display h5 img{
+  margin-left: 2px;
+
+}
+
+#card #footer {
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+
+#card #footer p {
+  padding: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+
+
+
+#card #footer form {
+  padding: 5px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#card #footer form select,
+#card #footer form input {
+  padding: 2px;
+  color: white;
+  border-radius: 3px;
+  background-color: #1AB7EA;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  outline: none;
+}
+
+#card #footer form input::placeholder {color: white;}
+
+#card #footer form div {
+  padding: 10px;
+  width: auto;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  color: white;
+  text-align: center;
+  background-color: #1AB7EA;
+  border: none;
+  border-radius: 3px;
+  transition: 1s box-shadow ease-in-out;
+}
+
+#card #footer form div:hover {box-shadow: 1px 1px 5px grey;}
+
+#card #footer div {
+  margin: 5px 0;
+  padding: 5px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.active {
+  background-color: red;
+}
+
+#card #footer div p {
+  background-color: #1AB7EA;
+  border-radius: 5px;
+}
+
+@media(max-width: 768px) {
+  html {font-size: 15px;}
+  #card {width: 80%;}
+  #card #footer select,
+  #card #footer input {
+    margin: 0 10px;
+    width: 40%;
+  }
+}
