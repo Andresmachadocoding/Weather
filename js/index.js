@@ -48,16 +48,16 @@ fetch(url, options)
     let deg = `${data.current.wind_degree}deg`;
     Arrow.style.transform = `rotate(${deg})`
     if (data.current.condition.text === 'Sunny' || data.current.condition.text === 'Clear') {
-       let img = document.getElementById('img').src=`/assets/Soul.png`
+       let img = document.getElementById('img').src=`assets/Soul.png`
        }
        else if (data.current.condition.text === 'Partly cloudy' || data.current.condition.text === 'Overcast'){
-       let img = document.getElementById('img').src=`/assets/Cloud.png`
+       let img = document.getElementById('img').src=`assets/Cloud.png`
        }
        else if (data.current.condition.text === 'Moderate or heavy rain with thunder' || data.current.condition.text === 'Light rain') {
-       let img = document.getElementById('img').src=`/assets/Rain.png`
+       let img = document.getElementById('img').src=`assets/Rain.png`
     }
    else if (data.current.condition.text === 'Storm' || 'Thundery outbreaks possible') {
-    let img = document.getElementById('img').src=`/assets/storm.png`
+    let img = document.getElementById('img').src=`assets/storm.png`
     }
 })
 .catch(error => console.log(error));  
