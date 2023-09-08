@@ -9,7 +9,7 @@ html {
   font-size: 20px;
   overflow-x: hidden;
   color: white;
-  background-image: url('/assets/clouds.jpg');
+  background-image: url('assets/clouds.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
